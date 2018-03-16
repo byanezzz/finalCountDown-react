@@ -1,5 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import RaisedButton from 'material-ui/RaisedButton';
 
 class SearchForm extends React.PureComponent {
   constructor(props) {
@@ -10,18 +11,19 @@ class SearchForm extends React.PureComponent {
   onChange = (e) => {
     this.setState({ value: e.target.value });
   }
-   onSubmit = (e) => {
+  onSubmit = (e) => {
     e.preventDefault();
     this.props.onSubmit(this.state.value);
   } 
 
   render() {
     return <form onSubmit={ this.onSubmit }>
-      <label htmlFor="searchInput">Search a repository</label>
-      <input type="text" className="six.columns" name="Search"
-        placeholder="react, rails, webpack..." onChange={ this.onChange }
+      <label htmlFor="searchInput">Ready to search?</label>
+      <input type="text" name="Search"
+        placeholder="Search anything. Really, anything." onChange={ this.onChange }
         id="searchInput" defaultValue={ this.props.search }/>
-      <p className="align-center"><input className="button-primary" type="submit" value="Search"/></p>
+      <RaisedButton label="Search!" secondary={true} type="submit" />
+      {/* <input className="button-primary"  value="Search"/> */}
     </form>;
   }
 }
