@@ -3,19 +3,8 @@ import './Header.css';
 
 const Header = () => (
   <header className="Header">
-    <h1>Wiki Search</h1>
+    <img src="http://www.ifblanco.cl/wp-content/uploads/2016/06/Laboratoria-codigo.png" alt=""/>
   </header>
 )
-
-/* Header extends React.Component {
-  shouldComponenteUpdate() {
-    return false;
-  }
-  render() {
-    return <header className="Header">
-      <h1>Wiki Search</h1>
-    </header>
-  }
-} */
 
 export default Header;

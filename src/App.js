@@ -4,7 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import AppBar from 'material-ui/AppBar';
 import './App.css';
 import Header from './components/Header/Header';
-import SearchBar from './components/SearchForm/SearchBar';
+import SearchBar from './components/SearchBar/SearchBar';
 import MemeList from './components/MemeList/Index';
 import request from 'superagent';
 /* import SearchContainer from './containers/SearchContainer/SearchContainer'; */
@@ -27,45 +27,22 @@ handleTermChange = (term) => {
   });
 };
 
- /*  handleTermChange = (term) => {
-    
-    let gifiTerm = term.replace(/\s/g,"+");
-    /* console.log(wikiTerm);
-    fetch(`http://api.giphy.com/v1/gifs/search?q=${gifiTerm}&api_key=dc6zaTOxFJmzC`)
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data.data);
-      setThisState(data);   
-    })
-    .catch((error) => {
-      console.log('Hubo un problema con la operación: ' + error.message);
-    })
-  }
-  setThisState (data) {
-    this.setState({ gifs: data.data })
-  } */
-
   render() {
     return (
       <MuiThemeProvider>
         <Grid>
           <Row>
             <Col xs={12}>
-              <AppBar title='WikiSearch'/>
+              <AppBar className="appbar" title='The Final Countdown'/>
             </Col>
           </Row>
           <Row>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={3}>
               <Header />
               <SearchBar onTermChange={term => this.handleTermChange(term)}/>
-              {/* <SearchForm></SearchForm> */}
-              {/* <SearchContainer></SearchContainer> */}
             </Col>
-            <Col xs={12} md={6}>
-            <MemeList gifs={this.state.gifs} />
-              {/* <ContentContainer></ContentContainer> */}
+            <Col xs={12} md={9}>
+              <MemeList gifs={this.state.gifs} />
             </Col>
           </Row>
         </Grid>

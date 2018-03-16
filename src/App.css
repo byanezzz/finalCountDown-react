@@ -73,3 +73,7 @@ svg {
   color: white;
   background-color: black;
 }
+
+.appbar {
+  background-color: rgb(247, 182, 35) !important;
+}

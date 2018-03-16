@@ -1,5 +1,6 @@
 import React from 'react';
 import PaperMeme from '../PaperMeme/Index';
+import './MemeList.css'
 
 const MemeList = (props) => {
   const gifItems = props.gifs.map((image) => {
@@ -7,7 +8,7 @@ const MemeList = (props) => {
   });
 
   return (
-    <ul>{gifItems}</ul>
+    <ul className="MemeList">{gifItems}</ul>
   );
 };
 
