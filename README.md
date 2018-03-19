@@ -1,6 +1,6 @@
-#CountDown
+# CountDown
 
-##Buscador de Gif:
+## Buscador de Gif:
 
 Para visualizar el proyecto debes:
 
@@ -11,9 +11,9 @@ Para visualizar el proyecto debes:
  - npm start
 
 
-##Dependencias usadas en el proyecto:
+## Dependencias usadas en el proyecto:
 
-####Desarrollo:
+#### Desarrollo:
 
 gh-pages v1.1.0
 react v16.2.0
@@ -21,9 +21,9 @@ react-dom v16.2.0
 prop-types v15.6.1
 superagent v3.8.2
 
-####Producción:
+#### Producción:
 
 material-ui v0.20.0
 react-flexbox-grid v2.0.0
 
-####Puedes ver el wireframe del proyecto en el siguiente [Link](https://vectr.com/carrzv/b2Sf1mMGJQ.jpg?width=640&height=640&select=b2Sf1mMGJQpage0)
+#### Puedes ver el wireframe del proyecto en el siguiente [Link](https://vectr.com/carrzv/b2Sf1mMGJQ.jpg?width=640&height=640&select=b2Sf1mMGJQpage0)
